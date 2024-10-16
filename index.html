@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AnTony Mica</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">AnTony Mica</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#experience">Expériences</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="logo">AnTony Mica</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">À propos</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Expériences</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projets</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="AnTony Mica profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Bonjour, je suis</p>
+        <h1 class="title">AnTony Mica</h1>
+        <p class="section__text__p2">Ingénieur DevOps</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+           Télécharger le CV
+          </button>
+          <button class="btn btn-color-1" onclick="window.location.href='#contact'">
+            Informations de contact
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/mica-antony/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/antonymica'"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <p class="section__text__p1">Apprenez à me connaître</p>
+      <h1 class="title">À propos de moi</h1>
+      <div class="section-container">
+        <!--<div class="section__pic-container">
+          <img
+            src="./assets/about-pic.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        -->
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Expériences</h3>
+              <p>
+                Stage en DevOps et
+                Technicien réseau<br/>
+                ARATO Fianarantsoa
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Éducation</h3>
+              <p>
+                Licence Professionnelle<br/>
+                ENI Fianarantsoa
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Passionné par les systèmes et réseaux, je suis actuellement en Licence 3 à l'École Nationale d'Informatique. Avec une solide expérience en DevOps, notamment dans l'automatisation de déploiements et la gestion de pipelines CI/CD, je travaille actuellement sur des projets combinant cloud computing, containerisation, et surveillance d'infrastructures. Mon objectif est de continuer à développer mes compétences en intégrant des outils d'IA et de data science pour améliorer l'efficacité des systèmes que je mets en place.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="window.location.href='#experience'"
+      />
+    </section>
+    
+    <section id="experience">
+      <p class="section__text__p1">Explorez mes</p>
+      <h1 class="title">Expériences</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Administration Système</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icône d'expérience"
+                  class="icon"
+                />
+                <div>
+                  <h3>Système Linux</h3>
+                  <p>Expérimenté</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icône d'expérience"
+                  class="icon"
+                />
+                <div>
+                  <h3>Configuration Réseau</h3>
+                  <p>Expérimenté</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icône d'expérience"
+                  class="icon"
+                />
+                <div>
+                  <h3>Firewall & Sécurité</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icône d'expérience"
+                  class="icon"
+                />
+                <div>
+                  <h3>Virtualisation (VMware, Virtalbox)</h3>
+                  <p>Expérimenté</p>
+                </div>
+              </article>
+            </div>
+          </div>
+    
+          <div class="details-container">
+            <h2 class="experience-sub-title">DevOps & Automatisation</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icône d'expérience"
+                  class="icon"
+                />
+                <div>
+                  <h3>Docker & Kubernetes</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icône d'expérience"
+                  class="icon"
+                />
+                <div>
+                  <h3>CI/CD (GitLab)</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icône d'expérience"
+                  class="icon"
+                />
+                <div>
+                  <h3>Surveillance (Prometheus, Grafana)</h3>
+                  <p>Intermédiaire</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icône d'expérience"
+                  class="icon"
+                />
+                <div>
+                  <h3>Contrôle de Version (Git)</h3>
+                  <p>Expérimenté</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Icône de flèche"
+        class="icon arrow"
+        onclick="window.location.href='#projects'"
+      />
+    </section>    
+
+    <section id="projects">
+      <p class="section__text__p1">Découvrez mes récents</p>
+      <h1 class="title">Projets</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Word Master</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/antonymica/words_master'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Parcel Delivery</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/antonymica/parcel-delivery'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Docker sur Ubuntu</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/antonymica/docker-ce-on-ubuntu'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="window.location.href='#contact'"
+      />
+    </section>
+
+    <section id="contact">
+      <p class="section__text__p1">Entrons en contact !</p>
+      <h1 class="title">Contact</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:micaprofessionnel@gmail.com">micaprofessionnel@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/mica-antony/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#experience">Expériences</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 AnTony Mica. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
